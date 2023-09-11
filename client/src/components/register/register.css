@@ -1,0 +1,107 @@
+.register{
+    margin-top: 2.5rem;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px grey;
+    background: white;
+}
+.register h1{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.register > input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 6px 0;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 1rem;
+}
+
+.register > .btn , #reg-log{
+    width: 42vw;  /* for reg-log width in % will not work, so width=84%, vw= 50%of 84 = 42%*/
+    background-color: #1877f2;
+    border: 1px solid #1877f2;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.85rem;
+    margin: 0.5rem 0;
+    border-radius: 14px;
+    outline: none;
+    cursor: pointer;
+}
+@media(min-width:950px){
+    .register{
+        width: 70vw;
+        height: 83vh;
+        /* gap: 1rem; */
+        border-radius: 1rem;
+    }
+    .register > .btn , #reg-log{
+        width: 58vw;  /* for reg-log width in % will not work, so width=84%, vw= 50%of 84 = 42%*/
+    }
+
+}
+@media(max-width:950px){
+    .register{
+        width: 74vw;
+        height: 85vh;
+        /* gap: 1rem; */
+        border-radius: 1rem;
+    }
+    .register > .btn , #reg-log{
+        width: 62vw;  /* for reg-log width in % will not work, so width=84%, vw= 50%of 84 = 42%*/
+    }
+
+}
+
+@media(max-width:800px){
+    .register{
+        width: 80vw;
+        height: 86vh;
+        border-radius: 1rem;
+    }
+  
+    .register > .btn , #reg-log{
+        width: 67vw;  /* for reg-log width in % will not work, so width=84%, vw= 50%of 84 = 42%*/
+    }
+}
+@media(max-width:650px){
+    .register{
+        width: 89vw;
+        height: 86vh;
+        border-radius: 1rem;
+    }
+  
+    .register > .btn , #reg-log{
+        width: 76vw;  /* for reg-log width in % will not work, so width=84%, vw= 50%of 84 = 42%*/
+    }
+}
+
+@media(max-width:440px){
+    .register{
+        width: 94vw;
+        height: 85vh;
+        border-radius: 1rem;
+    }
+  
+    .register > .btn , #reg-log{
+        width: 81vw;  /* for reg-log width in % will not work, so width=84%, vw= 50%of 84 = 42%*/
+    }
+}   
+@media(max-width:300px){
+    .register{
+        width: 94vw;
+        height: 90vh;
+        border-radius: 1rem;
+    }
+    .register > .btn , #reg-log{
+        width: 81vw;  /* for reg-log width in % will not work, so width=84%, vw= 50%of 84 = 42%*/
+    }
+}    

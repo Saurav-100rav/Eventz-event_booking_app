@@ -1,0 +1,65 @@
+/* Profile.css */
+
+.profile-card {
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the card horizontally */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  
+    /* Add animation on hover */
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .profile-image img {
+    width: 150px; /* Adjust the size of the profile picture */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the circle */
+    margin: 0 auto 20px; /* Center the image horizontally and add space below */
+  }
+  
+  .profile-info h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .profile-info p {
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  @media(max-width:950px){
+    .profile-card{
+      margin-top: 3rem;
+      width: 55vw;
+      height: 70vh;
+    }
+  }
+  @media(max-width:680px){
+    .profile-card{
+      margin-top: 3rem;
+      width: 65vw;
+      height: 70vh;
+    }
+  }
+  @media(max-width:500px){
+    .profile-card{
+      margin-top: 3rem;
+      width: 85vw;
+      height: 70vh;
+    }
+  }
+  @media(max-width:350px){
+    .profile-card{
+      margin-top: 3rem;
+      width: 95vw;
+      height: 70vh;
+    }
+  }
