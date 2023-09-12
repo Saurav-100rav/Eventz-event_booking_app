@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {isLoggedIn,getProfileInfo} from "../api"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import "./events.css"
 import party from "./party.jpeg"
 
@@ -49,11 +49,11 @@ const Booking = () => {
         <div className="events-container">
         { bookings === [] ? {empty}
         : bookings.map( (event)=>{
-                    // const istTime = new Date(event.eventTime);
-                    // istTime.setHours(istTime.getHours() + 5, istTime.getMinutes() + 30);
+                    const istTime = new Date(event.eventTime);
+                    istTime.setHours(istTime.getHours() , istTime.getMinutes() );
 
-                    // const date = istTime.toLocaleDateString('en-IN');
-                    // const time = istTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+                    const date = istTime.toLocaleDateString('en-IN');
+                    const time = istTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
 
                     return(
                         
@@ -64,9 +64,12 @@ const Booking = () => {
                             <div className="event-info">
                             <h3>{event.eventName}</h3>
                             {/* <p>Date: {date}</p> */}
-                            <p>Time: {event.eventTime}</p>
-                            <p>Venue: {event.eventVenue}</p>
-                            <p>Description: {event.eventDescription}</p>
+                            <p>Time: {date}</p>
+                            <p>Venue: {time}</p>
+                            {/* <p>Description: {event.eventDescription}</p> */}
+                            <Link to={`/eventdetails/${event._id}`}>
+                                    See Details 
+                                    </Link> 
                             </div>
                     </div>
                     )

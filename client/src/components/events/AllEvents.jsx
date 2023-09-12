@@ -54,7 +54,7 @@ const AllEvents = () => {
   
   return (
     <div className='all-events'>
-        <h2>All Events you can attend</h2>
+        { events.length > 0 ? <h2>All Events you can attend here</h2> :""}
         <div className="events-container">
             {
                 events ? 
